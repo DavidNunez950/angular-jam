@@ -1,0 +1,12 @@
+.input {
+    width: 40px;
+    z-index: 5;
+}
+
+.rounded-pill-left {
+    border-radius: 100% 0% 0% 100%;
+}
+
+.rounded-pill-rigth{
+    border-radius: 0% 100% 100% 0%;
+}

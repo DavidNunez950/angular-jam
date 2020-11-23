@@ -1,0 +1,9 @@
+<div class="d-flex flex-row flex-nowrap">
+    <div class="input-group-prepend">
+        <button type="button" class="btn btn-info pr-4 mr-n3 rounded-pill-left" (click)="downQuantity()">-</button>
+    </div>
+    <input type="text" class="text-center input rounded-pill"  [(ngModel)]="quantity" (keyup)="changeQuantity($event)">
+    <div class="input-group-append">
+        <button type="button" class="btn btn-info pl-4 ml-n3 rounded-pill-rigth" (click)="upQuantity()">+</button>
+    </div>
+</div>

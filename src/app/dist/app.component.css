@@ -1,0 +1,22 @@
+.btn-floating {
+  margin: 10px;
+  width: 50px;
+  border-radius: 100%;
+  color: white;
+}
+
+.btn-fb {
+  background: #2d59ec;
+}
+
+.btn-tw {
+  background: #1ae7dd;
+}
+
+.btn-gplus {
+  background: #eb3535;
+}
+
+.btn-ins {
+  background: #9335eb;
+}
