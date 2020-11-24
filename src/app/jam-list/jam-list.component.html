@@ -18,7 +18,7 @@
                 <td>{{jam.price | currency:'USD'}}</td>
                 <td>{{jam.stock}}</td>
                 <td>
-                    <div class="d-flex flex-row flex-nowrap justify-content-around w-50 pr-3 pl-3 pt-1 pb-1 bg-dark rounded-pill"  [ngClass]="{'bg-dark' : jam.stock>0, 'bg-warning' : jam.stock==0}" width="100px">
+                    <div class="d-flex flex-row flex-nowrap pr-3 pl-3 pt-1 pb-1 bg-dark rounded-pill small-btn"  [ngClass]="{'bg-dark' : jam.stock>0, 'bg-warning' : jam.stock==0}" width="100px">
                         <app-input-integer  [(quantity)]="jam.quantity" [minValue]="0" [maxValue]="jam.stock"  *ngIf="jam.stock>0" (maxReached)="maxReached($event)"></app-input-integer>
                         <button *ngIf="jam.stock > 0"  (click)="addToCart(jam)" class="btn btn-success rounded-circle ml-1">
                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

@@ -15,35 +15,35 @@ var JamListComponent = /** @class */ (function () {
             {
                 flavor: 'orange',
                 stock: 9999,
-                img: 'assets/img/orange.png',
+                img: 'https://raw.githubusercontent.com/DavidNunez950/angular-jam/master/src/assets/img/orange.png',
                 price: 0.5,
                 quantity: 0
             },
             {
                 flavor: 'strowberry',
                 stock: 76,
-                img: 'assets/img/strowberry.png',
+                img: 'https://raw.githubusercontent.com/DavidNunez950/angular-jam/master/src/assets/img/strowberry.png',
                 price: 20,
                 quantity: 0
             },
             {
                 flavor: 'apple',
                 stock: 200,
-                img: 'assets/img/apple.png',
+                img: 'https://raw.githubusercontent.com/DavidNunez950/angular-jam/master/src/assets/img/apple.png',
                 price: 15,
                 quantity: 0
             },
             {
                 flavor: 'banana',
                 stock: 676,
-                img: 'assets/img/banana.png',
+                img: 'https://raw.githubusercontent.com/DavidNunez950/angular-jam/master/src/assets/img/banana.png',
                 price: 10,
                 quantity: 0
             },
             {
                 flavor: 'plum',
                 stock: 255,
-                img: 'assets/img/plum.png',
+                img: 'https://raw.githubusercontent.com/DavidNunez950/angular-jam/master/src/assets/img/plum.png',
                 price: 500,
                 quantity: 0
             },
