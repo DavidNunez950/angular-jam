@@ -10,36 +10,33 @@ exports.InputIntegerComponent = void 0;
 var core_1 = require("@angular/core");
 var InputIntegerComponent = /** @class */ (function () {
     function InputIntegerComponent() {
+        // Uso un atributo del objeto para representar el valor minimo para que sea más prolijo
+        this.minValue = 0;
         this.quantityChange = new core_1.EventEmitter();
         this.maxReached = new core_1.EventEmitter();
     }
-    InputIntegerComponent.prototype.ngOnInit = function () {
-    };
+    InputIntegerComponent.prototype.ngOnInit = function () { };
     InputIntegerComponent.prototype.downQuantity = function () {
-        // this.verifyValues();
         if (this.quantity > this.minValue) {
             this.quantity--;
             this.quantityChange.emit(this.quantity);
         }
     };
     InputIntegerComponent.prototype.upQuantity = function () {
-        // debugger;
-        // this.verifyValues();
         if (this.quantity < this.maxValue) {
             this.quantity++;
             this.quantityChange.emit(this.quantity);
         }
         else {
-            this.maxReached.emit("Papu, se alzanzo el mazimó");
+            this.maxReached.emit("You can't buy anything else");
         }
     };
     InputIntegerComponent.prototype.changeQuantity = function (event) {
-        console.log(Number.isNaN(event.target.value));
-        this.quantity = Number.parseInt((String(this.quantity)), 10) + 0;
+        this.quantity = Number.parseInt((String(this.quantity)), 10);
         if (this.quantity > this.maxValue || event.target.value > this.maxValue) {
             this.quantity = this.maxValue;
         }
-        else if (this.quantity < this.minValue || event.target.value < this.minValue || Number.isNaN(this.quantity) || Number.isNaN(event.target.value)) {
+        else if (this.quantity < this.minValue || event.target.value < this.minValue || Number.isNaN(this.quantity)) {
             this.quantity = this.minValue;
         }
         this.quantityChange.emit(this.quantity);
@@ -47,9 +44,6 @@ var InputIntegerComponent = /** @class */ (function () {
     __decorate([
         core_1.Input()
     ], InputIntegerComponent.prototype, "quantity");
-    __decorate([
-        core_1.Input()
-    ], InputIntegerComponent.prototype, "minValue");
     __decorate([
         core_1.Input()
     ], InputIntegerComponent.prototype, "maxValue");
